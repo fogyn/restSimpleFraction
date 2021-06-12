@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery.min.js"></script>
+    <!--<script src="js/mainrest.js"></script>-->
+    <script src="js/check.js"></script>
+    <script src="js/reduction.js"></script>
+    <script src="js/act.js"></script>
+    <script src="js/act2.js"></script>
+
+
+    <title>Title</title>
+
+</head>
+<body>
+
+<section>
+    <div class="container">
+       <!-- <div class="row">
+
+            <div class="col">
+                <a href="views/delete.html">Удалить</a>
+            </div>
+            <div class="col">
+                <a href="views/new.html">Новый</a>
+            </div>
+            <div class="col">
+                <a href="views/update.html">Редактрование</a>
+            </div>
+            <div class="col">
+                <a href="views/select.html">Выбрать</a>
+            </div> -->
+
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p>
+                    Данные дроби
+                </p>
+                <div>
+                    <p><input type="number" id="num" name="numerator" placeholder="числитель" required></p>
+                    <p><input type="number" id="denum" name="denominator" placeholder="знаменатель" required></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col radio">
+                <input type="radio" name="act" value="0">Проверка правильности<br>
+            </div>
+            <div class="col radio">
+                <input type="radio" name="act" value="1">Сокращение<br>
+            </div>
+
+        </div>
+
+        <div class="row">
+           <!-- <div class="col act">
+                <div class="chek">
+
+                        <p><label>Проверка, правильная ли дробь (да/нет)</label></p>
+
+                        <p><button type="button" name="but-chek" onclick="todocheck()">Выполнить</button></p>
+
+                    <hr>
+                    <div id="rezcheck"></div>
+                </div>
+            </div>
+
+            <div class="col act">
+                <div class="reduction">
+
+                    <p><label>Сокращение дроби </label></p>
+
+                    <p><button type="button" name="but-reduction" onclick="todoReduction()">Выполнить</button></p>
+
+                    <hr>
+                    <div >
+                        <h5 id="titleReduction"></h5>
+                        <div id="rezreduction1"></div>
+                        <div id="rezreduction2"></div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="col act">
+                <div class="todo">
+
+
+                    <p><button type="button" name="but-todo" onclick="todo()">Выполнить</button></p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+
+            <div class="col">
+                <p>
+                    Данные первой дроби
+                </p>
+                <div>
+                    <p><input type="number" id="num1" name="numerator1" placeholder="числитель1" required></p>
+                    <p><input type="number" id="denum1" name="denominator1" placeholder="знаменатель1" required></p>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <p>
+                    Данные второй дроби
+                </p>
+                <div>
+                    <p><input type="number" id="num2" name="numerator2" placeholder="числитель2" required></p>
+                    <p><input type="number" id="denum2" name="denominator2" placeholder="знаменатель2 " required></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col radio">
+                <input type="radio" name="act2" value="2">Сложение<br>
+            </div>
+            <div class="col radio">
+                <input type="radio" name="act2" value="3">Вычитание<br>
+            </div>
+            <div class="col radio">
+                <input type="radio" name="act2" value="4">Умножение<br>
+            </div>
+            <div class="col radio">
+                <input type="radio" name="act2" value="5">Деление<br>
+            </div>
+        </div>
+
+        <div class="row">
+
+        <!--    <div class="col act">
+                <div class="sum">
+
+                    <p><label>Сумма двух дробей </label></p>
+
+                    <p><button type="button" name="but-sum" onclick="todoSum()">Выполнить</button></p>
+
+                    <hr>
+
+                </div>
+            </div>
+            <div class="col act">
+                <div class="sub">
+
+                    <p><label>Разность двух дробей </label></p>
+
+                    <p><button type="button" name="but-sги" onclick="todoSub()">Выполнить</button></p>
+
+                    <hr>
+
+                </div>
+            </div>
+
+            <div class="col act">
+                <div class="multi">
+
+                    <p><label>Произведение двух дробей </label></p>
+
+                    <p><button type="button" name="but-multi" onclick="todoMulti()">Выполнить</button></p>
+
+                    <hr>
+
+                </div>
+            </div>
+
+            <div class="col act">
+                <div class="div">
+
+                    <p><label>Частное двух дробей </label></p>
+
+                    <p><button type="button" name="but-div" onclick="todoDiv()">Выполнить</button></p>
+
+                    <hr>
+
+                </div>
+            </div>  -->
+
+            <div class="col act">
+                <div class="todo">
+
+
+                    <p><button type="button" name="but-todo2" onclick="todo2()">Выполнить</button></p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div >
+                    <h5 id="titleRez"></h5>
+                    <div id="rez1"></div>
+                    <div id="rez2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="data3"></div>
+
+</body>
+</html>
